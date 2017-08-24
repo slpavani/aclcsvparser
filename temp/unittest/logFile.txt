@@ -1,0 +1,32 @@
+8/23/2017 5:28:02 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 5:43:55 PM
+8/23/2017 5:46:24 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 5:46:24 PM
+8/23/2017 5:46:24 PM
+8/23/2017 5:47:03 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 5:47:03 PM
+8/23/2017 5:47:03 PM
+8/23/2017 5:49:42 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 5:53:56 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 6:42:33 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 6:42:33 PM
+8/23/2017 6:42:33 PM
+8/23/2017 9:26:15 PM
+8/24/2017 12:26:18 AM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/24/2017 12:26:18 AM
+8/24/2017 12:26:18 AM
+Invalid File format. Number of columns (>6).Hence Terminating file parsing..Cole;Slaten;767-20-1490;Finance;Controller;124321;

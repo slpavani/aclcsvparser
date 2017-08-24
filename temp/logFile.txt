@@ -1,0 +1,19 @@
+8/23/2017 11:29:41 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/23/2017 11:31:54 PM
+8/23/2017 11:32:06 PM
+8/23/2017 11:33:03 PM
+8/23/2017 11:35:36 PM
+Invalid File format. Number of columns (>6).Hence Terminating file parsing..Cole;Slaten;767-20-1490;Finance;Controller;124321;
+8/23/2017 11:37:29 PM
+8/23/2017 11:54:12 PM
+8/23/2017 11:55:08 PM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/24/2017 12:09:48 AM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
+8/24/2017 12:15:38 AM
+Invalid no.of columns (<6),hence skipping row - keny;at,en;767-20-1492;Finance;Controller,Service Associate
+Violation of column Length,hence skipping row - karen;Slaten&;767-20-1490;Finance;Controller Controller Controller;124321.12
