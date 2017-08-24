@@ -1,2 +1,10 @@
 Question
 Please write a simple C# application which will read a CSV (delimited) and convert to our data file structure.se write a simple C# application which will read a CSV (delimited) and convert to our data file structure.
+
+How it works?
+
+It takes the CSV file as an input, which is in the format specified in the question. It writes the output to flat file in the given format.
+Throws Invalid File format exception incase the file is not the specified format. For example if the number of columns in a single row is > 6
+
+Also validations are added at for the columns of SIN, salary. 
+
