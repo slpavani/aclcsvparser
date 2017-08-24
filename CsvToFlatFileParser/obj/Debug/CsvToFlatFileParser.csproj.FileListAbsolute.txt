@@ -1,6 +1,0 @@
-C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParser\bin\Debug\CSVTOFLAT.exe.config
-C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParser\obj\Debug\CSVTOFLAT.exe
-C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParser\obj\Debug\CSVTOFLAT.pdb
-C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParser\bin\Debug\CSVTOFLAT.exe
-C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParser\bin\Debug\CSVTOFLAT.pdb
-C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParser\obj\Debug\CsvToFlatFileParser.csprojResolveAssemblyReference.cache
