@@ -19,6 +19,8 @@ namespace CsvToFlatFileParser
         private readonly List<List<string>> RowEntries = new List<List<string>>();
         private string currentEntry = "";
         private bool insideDoubleQuote;
+
+        private const int TOTALCOLUMNS = 6;
         // Defining fixed length for each column.Assuming length is different for each column
         /* Note: We can also calculate length dynamically based on the maximum length of column value for each column in a file
            but it will be a heavy call.
@@ -63,10 +65,11 @@ namespace CsvToFlatFileParser
 
             try
             {
-               success= ReadFile(filePath);
+               success = ReadFile(filePath);
             }
             catch (Exception e)
             {
+                logFile.WriteLine(e.Message);
                 throw new Exception(e.Message);
             }
             finally
@@ -188,12 +191,12 @@ namespace CsvToFlatFileParser
             {
                 List<string> newRow = RowEntries[RowEntries.Count - 1];
 
-                if (newRow.Count == 6)
+                if (newRow.Count == TOTALCOLUMNS)
                 {
                      success = WriteLine(newRow);
                      RowEntries.Remove(newRow);
                 }
-                else if (newRow.Count > 6)
+                else if (newRow.Count > TOTALCOLUMNS)
                 {
                     throw new Exception("Invalid File format. Number of columns (>6).Hence Terminating file parsing.." + string.Join(";", newRow));
                 }
@@ -207,14 +210,14 @@ namespace CsvToFlatFileParser
                 {
                     List<string> newRow = RowEntries[entriesLength - 1 - i];
 
-                    if (newRow.Count == 6)
+                    if (newRow.Count == TOTALCOLUMNS)
                     {
                         success=WriteLine(newRow);
                         RowEntries.Remove(newRow);
                         entriesLength--;
                     }
                     //skips row if there are missing column values (<6) for a record not throwing any exception
-                    else if (newRow.Count < 6 )
+                    else if (newRow.Count < TOTALCOLUMNS)
                     {
                         logFile.WriteLine("Invalid no.of columns (<6),hence skipping row - " + string.Join(";",newRow));
                         RowEntries.Remove(newRow);
@@ -234,7 +237,7 @@ namespace CsvToFlatFileParser
         /// Writes line to file if it meets below criteria
         /// 1.record length is equal to fixed length
         /// 2.the length of each field is valid
-        /// 3.Column type is numeric field or not.Assuming 1 to 5 columns are string and 6th column is numeric
+        /// 3.Column type is numeric field or not.Assuming TOTALCOLUMNS=6 then 1 to 5 columns are string and 6th column is numeric
         /// </summary>
         /// <param name="row"></param>
         /// <returns></returns>
@@ -251,19 +254,19 @@ namespace CsvToFlatFileParser
                 bool numericType = IsNumericType(column);
                try
                { 
-                   if (columnNumber % 6 != 0 && !numericType)
+                   if (columnNumber % TOTALCOLUMNS != 0 && !numericType)
                    {
                         column = column.Replace("\n", " ");
                         //string field is saved as left aligned text
-                        if (columnNumber % 6 == 1)
+                        if (columnNumber % TOTALCOLUMNS == 1)
                         {
                             column = FormatColumn(column, FirstNameLength, numericType);
                         }
-                        if (columnNumber % 6 == 2)
+                        if (columnNumber % TOTALCOLUMNS == 2)
                         {
                             column = FormatColumn(column, LastNameLength, numericType);
                         }
-                        if (columnNumber % 6 == 3)
+                        if (columnNumber % TOTALCOLUMNS == 3)
                         {
                             bool validSIN = IsValidSIN(column);
                             if(validSIN)
@@ -274,16 +277,16 @@ namespace CsvToFlatFileParser
                                 return false;
                             }
                         }
-                        if (columnNumber % 6 == 4)
+                        if (columnNumber % TOTALCOLUMNS == 4)
                         {
                             column = FormatColumn(column, DepartmentLength, numericType);
                         }
-                        if (columnNumber % 6 == 5)
+                        if (columnNumber % TOTALCOLUMNS == 5)
                         {
                             column = FormatColumn(column, TitleLength, numericType);
                         }
                     }
-                    else if (columnNumber % 6 == 0 && numericType)
+                    else if (columnNumber % TOTALCOLUMNS == 0 && numericType)
                     {
                         //Numeric field is saved as right aligned text
                         column = FormatColumn(column, SalaryLength, numericType);
@@ -357,7 +360,7 @@ namespace CsvToFlatFileParser
         {
             string path = Path.GetDirectoryName(filePath);
             //If you don't want to append data to old file ,we can create new file everytime based on the timestamp.
-            outputFilePath = path + "\\Copy.txt";
+            outputFilePath = path + "\\output.txt";
             logPath = path + "\\logFile.txt";
 
             try

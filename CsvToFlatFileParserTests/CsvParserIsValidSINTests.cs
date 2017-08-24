@@ -41,10 +41,24 @@ namespace CsvToFlatFileParser.Tests
         }
 
         /// <summary>
+        /// Invalid SIN formats are validated.Vaild Format is xxx-xx-xxxx
+        /// </summary>
+        [TestMethod()]
+        public void IsValidSINTest_AlphaNumeric()
+        {
+            CsvParser parser = new CsvParser();
+            bool result = false;
+
+            string SIN = "124-21-234k";
+            result = parser.IsValidSIN(SIN);
+            Assert.IsFalse(result);
+        }
+
+        /// <summary>
         ///  validate if SIN is of vaild length
         /// </summary>
         [TestMethod()]
-        public void IsValidSINTest_ExceptionCase()
+        public void IsValidSINTest_InvalidLength()
         {
             CsvParser parser = new CsvParser();
             string SIN = "124-2100-234";
@@ -58,17 +72,25 @@ namespace CsvToFlatFileParser.Tests
                 Assert.AreEqual(e.Message, "Invalid SIN");
             }
 
-            SIN = "124-21-2345 ";
+        }
+
+        /// <summary>
+        ///  Check if SIN doesn't contain any space
+        /// </summary>
+        [TestMethod()]
+        public void IsValidSINTest_ExceptionCase()
+        {
+            CsvParser parser = new CsvParser();
+
+            string SIN = "124-21-2345 ";
             try
             {
                 parser.IsValidSIN(SIN);
             }
             catch (Exception e)
             {
-
                 Assert.AreEqual(e.Message, "Invalid SIN");
             }
-
         }
     }
 }

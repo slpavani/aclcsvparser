@@ -51,9 +51,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="IsValidSINTests.cs" />
+    <Compile Include="CsvParserIsValidSINTests.cs" />
     <Compile Include="CsvParserScanFileTests.cs" />
-    <Compile Include="IsNumericTypeTests.cs" />
+    <Compile Include="CsvParserIsNumericTypeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

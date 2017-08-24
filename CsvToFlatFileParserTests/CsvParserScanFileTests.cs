@@ -37,9 +37,8 @@ namespace CsvToFlatFileParser.Tests
         /// checks if file exists in the path and is not empty file
         /// </summary>
         [TestMethod()]
-        public void ScanFileTest_Negative()
+        public void ScanFileTest_FileNotFound()
         {
-
             CsvParser parser = new CsvParser();
             bool Failureresult = false;
             //checks if file exists in specified location
@@ -52,9 +51,19 @@ namespace CsvToFlatFileParser.Tests
             {
                 Assert.AreEqual(e.Message, "Unable to find the specified file.");
             }
+        }
 
+        /// <summary>
+        /// checks if file is empty file
+        /// </summary>
+        [TestMethod()]
+        public void ScanFileTest_EmptyFile()
+        {
+            CsvParser parser = new CsvParser();
+            bool Failureresult = false;
+            
             //Checks if file is empty file
-            filepath = @"C:\temp\unittest\test_empty.csv";
+            string filepath = @"C:\temp\unittest\test_empty.csv";
             try
             {
                 parser.ScanFile(filepath);
@@ -64,7 +73,6 @@ namespace CsvToFlatFileParser.Tests
                 Assert.AreEqual(e.Message, "Empty File.Terminating.");
             }
         }
-
         /// <summary>
         ///  File parsing fails if no.of columns ( >6).Hence Terminating..
         /// </summary>

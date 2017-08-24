@@ -7,7 +7,7 @@ namespace CsvToFlatFileParser
     {
         public static void Main(string[] args)
         {
-            string path = @"C:\temp\unittest\test_invalidcolumns.csv";
+            string path = @"C:\temp\input.csv";
             CsvParser parser = new CsvParser();
             bool success = false;
             try
