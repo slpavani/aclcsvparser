@@ -3,12 +3,13 @@ Please write a simple C# application which will read a CSV (delimited) and conve
 
 How it works?
 
-It takes the CSV file as an input, which is in the format specified in the question. It writes the output to flat file in the given format.
+It takes the CSV file as an input, which is in the format specified in the question. It writes the output to flat file(txt) in the given format.
 
 Throws Invalid File format exception incase the file is not the specified format.
 For example if the number of columns in a single row is > 6
 
-Validations are added at for the columns of SIN, salary. 
+Usecases:
+Validations are added  for the columns - SIN, Salary. 
 Validations for column type and column length is considered.
 While writing data to flat file space between columns is not considered.
 A row is skipped incase no.of columns in a row is < 6
