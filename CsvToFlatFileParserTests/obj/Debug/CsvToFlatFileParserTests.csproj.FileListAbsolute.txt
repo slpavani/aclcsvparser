@@ -1,0 +1,9 @@
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\bin\Debug\CsvToFlatFileParserTests.dll
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\bin\Debug\CsvToFlatFileParserTests.pdb
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\bin\Debug\CSVTOFLAT.exe
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\bin\Debug\CSVTOFLAT.pdb
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\obj\Debug\CsvToFlatFileParserTests.csprojResolveAssemblyReference.cache
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\obj\Debug\CsvToFlatFileParserTests.dll
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CsvToFlatFileParserTests\obj\Debug\CsvToFlatFileParserTests.pdb

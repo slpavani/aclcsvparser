@@ -1,0 +1,6 @@
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CSVTOFLAT\bin\Debug\CSVTOFLAT.exe.config
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CSVTOFLAT\bin\Debug\CSVTOFLAT.exe
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CSVTOFLAT\bin\Debug\CSVTOFLAT.pdb
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CSVTOFLAT\obj\Debug\CSVTOFLAT.csprojResolveAssemblyReference.cache
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CSVTOFLAT\obj\Debug\CSVTOFLAT.exe
+C:\Users\sikhakolli_p\Desktop\misc code prcatice\CSVTOFLAT\CSVTOFLAT\obj\Debug\CSVTOFLAT.pdb
