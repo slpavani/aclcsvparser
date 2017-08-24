@@ -15,3 +15,4 @@ A row is skipped incase no.of columns in a row is < 6
 Logging the skipped rows and exceptions to a log file.
 Unittests are added considering different edge cases.
 
+Note: Appending data to output file and logfile if file already exists in the specfied root directory(c:\temp).
